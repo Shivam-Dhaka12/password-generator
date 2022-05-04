@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Password Generator</title>
+</head>
+<body>
+    
+    <main>
+        <div class="upper-box">
+            <h1 class="upper-h1">Generate a</h1>
+            <h1 class="lower-h1">random password</h1>
+            <h3>Never use an insecure password again.</h3>
+            <button class="generate" onclick="generate()"><svg class="flex-items" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3006 1.04627C11.7169 1.17749 12 1.56354 12 2.00001V7.00001L16 7.00001C16.3729 7.00001 16.7148 7.20747 16.887 7.5382C17.0592 7.86893 17.0331 8.268 16.8192 8.57347L9.81924 18.5735C9.56894 18.931 9.11564 19.085 8.69936 18.9537C8.28309 18.8225 8 18.4365 8 18L8 13H4C3.62713 13 3.28522 12.7926 3.11302 12.4618C2.94083 12.1311 2.96694 11.732 3.18077 11.4265L10.1808 1.42655C10.4311 1.06898 10.8844 0.915053 11.3006 1.04627Z" fill="white"/>
+                </svg><span class="flex-items">Generate passwords</span></button>
+            <!-- <img src="img/Thunder icon.png" class="icon"> -->
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            <div class="lower-box1">
+                <div id="password-1" class="password1"><svg width="50" height="13" viewBox="0 0 50 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 6.25C12.5 9.70178 9.70178 12.5 6.25 12.5C2.79822 12.5 0 9.70178 0 6.25C0 2.79822 2.79822 0 6.25 0C9.70178 0 12.5 2.79822 12.5 6.25Z" fill="#202B3C"/>
+                    <path d="M31.25 6.25C31.25 9.70178 28.4518 12.5 25 12.5C21.5482 12.5 18.75 9.70178 18.75 6.25C18.75 2.79822 21.5482 0 25 0C28.4518 0 31.25 2.79822 31.25 6.25Z" fill="#202B3C"/>
+                    <path d="M43.75 12.5C47.2018 12.5 50 9.70178 50 6.25C50 2.79822 47.2018 0 43.75 0C40.2982 0 37.5 2.79822 37.5 6.25C37.5 9.70178 40.2982 12.5 43.75 12.5Z" fill="#202B3C"/>
+                    </svg></div>
+                <div id="password-2" class="password1"><svg width="50" height="13" viewBox="0 0 50 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 6.25C12.5 9.70178 9.70178 12.5 6.25 12.5C2.79822 12.5 0 9.70178 0 6.25C0 2.79822 2.79822 0 6.25 0C9.70178 0 12.5 2.79822 12.5 6.25Z" fill="#202B3C"/>
+                    <path d="M31.25 6.25C31.25 9.70178 28.4518 12.5 25 12.5C21.5482 12.5 18.75 9.70178 18.75 6.25C18.75 2.79822 21.5482 0 25 0C28.4518 0 31.25 2.79822 31.25 6.25Z" fill="#202B3C"/>
+                    <path d="M43.75 12.5C47.2018 12.5 50 9.70178 50 6.25C50 2.79822 47.2018 0 43.75 0C40.2982 0 37.5 2.79822 37.5 6.25C37.5 9.70178 40.2982 12.5 43.75 12.5Z" fill="#202B3C"/>
+                    </svg></div>
+            </div>
+            <div class="lower-box2">
+                <div id="password-3" class="password2"><svg width="50" height="13" viewBox="0 0 50 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 6.25C12.5 9.70178 9.70178 12.5 6.25 12.5C2.79822 12.5 0 9.70178 0 6.25C0 2.79822 2.79822 0 6.25 0C9.70178 0 12.5 2.79822 12.5 6.25Z" fill="#202B3C"/>
+                    <path d="M31.25 6.25C31.25 9.70178 28.4518 12.5 25 12.5C21.5482 12.5 18.75 9.70178 18.75 6.25C18.75 2.79822 21.5482 0 25 0C28.4518 0 31.25 2.79822 31.25 6.25Z" fill="#202B3C"/>
+                    <path d="M43.75 12.5C47.2018 12.5 50 9.70178 50 6.25C50 2.79822 47.2018 0 43.75 0C40.2982 0 37.5 2.79822 37.5 6.25C37.5 9.70178 40.2982 12.5 43.75 12.5Z" fill="#202B3C"/>
+                    </svg></div>
+                <div id="password-4" class="password2"><svg width="50" height="13" viewBox="0 0 50 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 6.25C12.5 9.70178 9.70178 12.5 6.25 12.5C2.79822 12.5 0 9.70178 0 6.25C0 2.79822 2.79822 0 6.25 0C9.70178 0 12.5 2.79822 12.5 6.25Z" fill="#202B3C"/>
+                    <path d="M31.25 6.25C31.25 9.70178 28.4518 12.5 25 12.5C21.5482 12.5 18.75 9.70178 18.75 6.25C18.75 2.79822 21.5482 0 25 0C28.4518 0 31.25 2.79822 31.25 6.25Z" fill="#202B3C"/>
+                    <path d="M43.75 12.5C47.2018 12.5 50 9.70178 50 6.25C50 2.79822 47.2018 0 43.75 0C40.2982 0 37.5 2.79822 37.5 6.25C37.5 9.70178 40.2982 12.5 43.75 12.5Z" fill="#202B3C"/>
+                    </svg></div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

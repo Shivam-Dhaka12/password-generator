@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+
+body {
+    margin: 0;
+    padding: 5%;
+    color: white;
+    background-color: black;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+    background-color: #1F2937;
+    border-radius: 5px;
+    /* font-family: 'Karla'; */
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0;
+    /* or 100% */
+
+    letter-spacing: -0.025em;
+}
+
+.lower-h1 {
+    color:#4ADF86;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+    ;
+
+}
+
+.generate {
+    background-color: #10B981;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 60px 0 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+}
+
+.generate:hover {
+    background-color: #00a66f;
+}
+.generate:active {
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.717);
+}
+
+.flex-items{
+    margin: 0 10px 0 0;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+}
+
+.lower-box1 {
+    width: 100%;
+    margin-left : auto;
+
+}
+
+.lower-box2 {
+    width: 100%;
+    margin-right : auto;
+}
+
+.password1 {
+    background-color: #273549;
+    width: 80%;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px auto 5px 0;
+    color: #55F991;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+
+}.password2 {
+    background-color: #273549;
+    width: 80%;     
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 0 5px auto;
+    color: #55F991;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+
+}
+
+.line {
+    border: 1px solid #2F3E53;
+    height: 0;
+}
